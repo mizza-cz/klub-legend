@@ -1,0 +1,63 @@
+.hp-footer {
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+  }
+  &__item {
+    display: block;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    &:hover img {
+      transform: scale(1.1);
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      max-height: 264px;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url("../images/ico/footer-bg.svg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    max-height: 380px;
+  }
+}
+.footer__inner {
+  padding-top: 160px;
+  padding-bottom: 60px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--brand-500);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  @include media-breakpoint-down(xl) {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  a {
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+}

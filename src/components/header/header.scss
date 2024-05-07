@@ -1,0 +1,86 @@
+.header {
+  position: absolute;
+  width: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: url("../images/ico/header-bg.svg");
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  &__inner {
+    padding-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    @include media-breakpoint-down(xl) {
+      padding-top: 0;
+    }
+  }
+  &__logo {
+    position: relative;
+    top: 20px;
+    width: 140px;
+    height: 130px;
+    display: block;
+    @include media-breakpoint-down(xl) {
+      height: 100px;
+      width: 110px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__language {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: -80px;
+  @include media-breakpoint-down(lg) {
+    margin-left: 0px;
+  }
+  @include media-breakpoint-down(md) {
+    gap: 24px;
+  }
+}
+.nav-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.36px;
+  color: var(--brand-500);
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  &:hover {
+    color: var(--gold-500);
+  }
+}

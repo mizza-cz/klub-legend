@@ -1,0 +1,33 @@
+.link {
+  width: fit-content;
+  display: block;
+  text-decoration-color: transparent;
+  padding: 10px 40px 10px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  position: relative;
+  color: var(--color-light);
+  &:hover {
+    text-decoration-color: inherit;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    background-image: url("../images/ico/right.svg");
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.link--brand {
+  background-color: var(--brand-500);
+}
+.link--gold {
+  background-color: var(--gold-500);
+}

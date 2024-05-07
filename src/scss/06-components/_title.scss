@@ -1,0 +1,22 @@
+.title {
+  color: var(--gold-500) !important;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.69px;
+  text-align: center;
+  span {
+    display: block;
+    font-size: 164px;
+    font-weight: 700;
+    line-height: 191.55px;
+    color: var(--brand-500);
+    position: relative;
+    background: linear-gradient(180deg, #a08c6e 0%, #001824 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include media-breakpoint-down(lg) {
+      font-size: 120px;
+      line-height: normal;
+    }
+  }
+}
