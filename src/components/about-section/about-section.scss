@@ -1,0 +1,45 @@
+.about-section {
+  padding-top: 12rem;
+  padding-bottom: 60px;
+  @include media-breakpoint-down(xl) {
+    padding-top: 10rem;
+  }
+  &__content {
+    max-width: 622px;
+    margin: 0 auto 200px;
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 120px;
+    }
+    .perex {
+      margin-bottom: 64px;
+      margin-top: 64px;
+      @include media-breakpoint-down(xl) {
+        margin-bottom: 40px;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+.perex {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36.4px;
+  color: var(--color-light);
+  font-family: "Chakra Petch", sans-serif;
+  @include media-breakpoint-down(lg) {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+
+.p1 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: "Chakra Petch", sans-serif;
+  color: var(--color-light);
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 133%;
+  }
+}
