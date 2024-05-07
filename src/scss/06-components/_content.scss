@@ -10,4 +10,51 @@
   > :last-child {
     margin-bottom: 0;
   }
+  p + p {
+    margin-top: 32px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--color-light);
+    margin-top: 64px !important;
+    margin-bottom: 24px !important;
+    @include media-breakpoint-down(lg) {
+      margin-top: 48px !important;
+    }
+  }
+  ul {
+    li {
+      font-family: "Chakra Petch", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+      color: var(--color-light);
+    }
+  }
+}
+.perex {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36.4px;
+  color: var(--color-light);
+  font-family: "Chakra Petch", sans-serif;
+  @include media-breakpoint-down(lg) {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+
+.o-content p,
+.p1 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: "Chakra Petch", sans-serif;
+  color: var(--color-light);
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 133%;
+  }
 }

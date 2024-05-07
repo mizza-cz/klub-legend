@@ -1,6 +1,7 @@
 .header {
   position: absolute;
   width: 100%;
+  z-index: 999;
   &::before {
     content: "";
     position: absolute;
@@ -13,22 +14,25 @@
     background-position: center top;
   }
   &__inner {
-    padding-top: 1.25rem;
+    padding-top: 4.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     position: relative;
+    padding-bottom: 3rem;
     @include media-breakpoint-down(xl) {
-      padding-top: 0;
+      padding-top: 4rem;
     }
   }
   &__logo {
-    position: relative;
-    top: 20px;
+    position: absolute;
+    left: 0;
+    top: 36px;
     width: 140px;
     height: 130px;
     display: block;
+
     @include media-breakpoint-down(xl) {
       height: 100px;
       width: 110px;
@@ -64,7 +68,7 @@
   display: flex;
   align-items: center;
   gap: 32px;
-  margin-left: -80px;
+  margin: 0 auto;
   @include media-breakpoint-down(lg) {
     margin-left: 0px;
   }
